@@ -31,4 +31,8 @@ public class Records implements java.io.Serializable {
         Country = country;
     }
 
+    public String toString() {
+        return "{ Name: " + Name + ", City: " + City + ", Country: " + Country + " }\n";
+    }
+
 }

@@ -37,7 +37,15 @@ public class customerRecordsManager {
         Gson gson = new Gson();
         customerRecords Record = gson.fromJson(url, customerRecords.class);
 
-        System.out.println(gson.toJson(Record));
+        // System.out.println(gson.toJson(Record));
+
+        System.out.println("-----------------  Customer Info ------------------");
+        for (int i = 0; i < Record.getRecords().size(); i++) {
+            System.out.print("Customer " + i + " ==> ");
+            System.out.print(Record.getRecords().get(i));
+
+        }
+
 
 
     }
